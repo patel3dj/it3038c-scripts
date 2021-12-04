@@ -13,8 +13,9 @@ http.createServer(function(req, res){
 }
     else if(req.url.match("/sysinfo")) {
         myHostName=os.hostname();
+        serverUpTime=os.uptime();
 
-        html=`    
+        html= `    
         <!DOCTYPE html>
         <html>
           <head>
@@ -23,7 +24,7 @@ http.createServer(function(req, res){
           <body>
             <p>Hostname: ${myHostName}</p>
             <p>IP: ${ip.address()}</p>
-            <p>Server Uptime: </p>
+            <p>Server Uptime: ${os.uptime}</p>
             <p>Total Memory: </p>
             <p>Free Memory: </p>
             <p>Number of CPUs: </p>            

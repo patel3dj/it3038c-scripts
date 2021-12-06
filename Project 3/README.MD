@@ -1,4 +1,7 @@
-This is the project for calculating grades for students, it is very helpful to check there grade and average, # opening file which contains grades
+This is the project for calculating grades for students, it is very helpful to check there grade and average, # opening file which contains grades.
+
+" my project has a textfile linked to it so to run the code you will need to download the textfile"course_marks.txt" after downloading that you will be able to run the code and a new file will be generated which will be called course grades."
+just keep following all the steps as per the comments and you will be guided to the destination smoothly.
 file = open("course_marks.txt", 'r')
 # opening file to write grades
 fileout = open("CourseGrade.txt", 'w')
